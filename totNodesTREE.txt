@@ -1,0 +1,8 @@
+int totalnodes(struct node *tree){
+    struct node *root = new struct node;
+    if(root == null) {
+        return 0;
+    }else {
+        return   (totalnodes(root->left) + totalnodes(root->right) + 1);
+    }
+}
